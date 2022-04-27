@@ -3,3 +3,5 @@ my first git practice project
 new branch created!!
 
 changes made!!
+
+Now checking the changes reflecting in other branch.
