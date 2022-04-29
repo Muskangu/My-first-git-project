@@ -5,3 +5,5 @@ new branch created!!
 Updated changes made!!
 
 Now checking the changes reflecting in other branch.
+
+Do changes in dev in remote and reflect them in local, after that merge them in main branch in remote.
