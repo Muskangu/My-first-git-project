@@ -81,11 +81,21 @@ on m.merchant_id = o.merchant_id;
 
 select * from result1;
 
-select c.customer_name, count(r.order_no), r.name
+use shopping_mart;
+
+select c.customer_name, count(r.order_no) as total_count_of_orders , r.name
 from result1 r 
 inner join customers c
 on c.customer_id = r.customer_id
 group by r.name, c.customer_name;
+
+select c.customer_name, count(r.order_no) as total_count_of_orders , r.name
+from result1 r 
+inner join customers c
+on c.customer_id = r.customer_id
+group by r.name, c.customer_name
+having count(r.order_no)<5;
+
 
 select * from customers;
 select * from merchant;
